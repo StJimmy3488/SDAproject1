@@ -10,13 +10,17 @@ body {
 
 }
 .menu {
-    text-align: right;
+    overflow: hidden;
+    text-align: left;
     justify-content: space-between;
     background-color: rgba(24,34,75,255);
     padding: 10px 20px ;
 }
-.menu a {
-    
+li{
+    list-style-type: none;
+}
+.menu-items a {
+    display:inline-block;
     background: none;
     font-size: 20px;   
     color: #aaaaaa;
@@ -24,7 +28,51 @@ body {
     padding: 8px;
     cursor: pointer;
     text-decoration: none;
+    transition: 1s;
+   
+    
 }
+.dropdown {
+    float: left;
+    overflow: hidden; 
+}
+.dropdown .dropanc{
+    
+    border: none;
+    outline: none;
+    color: #aaaaaa;
+    padding: 8px;
+    background-color: inherit;
+    font-family: inherit; 
+    margin: 0;   
+}
+.menu a:hover, .dropdown:hover .dropanc {
+    background-color: red;
+  }
+  .dropdown-content{
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;  
+  }
+  .dropdown-content a {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    
+  }
+  .dropdown-content a:hover {
+    background-color: #ddd;
+  }
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+
+
 .headerImg img {
     max-width: 100%;
     height: auto;
