@@ -1,0 +1,31 @@
+body {
+    background-color: rgb(62, 80, 104);
+    margin: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.logo{
+    background-color: rgba(24,34,75,255);
+    padding: 15px;
+
+
+}
+.menu {
+    text-align: right;
+    justify-content: space-between;
+    background-color: rgba(24,34,75,255);
+    padding: 10px 20px ;
+}
+.menu a {
+    
+    background: none;
+    font-size: 20px;   
+    color: #aaaaaa;
+    border: 0;
+    padding: 8px;
+    cursor: pointer;
+    text-decoration: none;
+}
+.headerImg img {
+    max-width: 100%;
+    height: auto;
+}
